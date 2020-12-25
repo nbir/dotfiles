@@ -1,4 +1,4 @@
-# dotdfiles
+# dotfiles
 
 ## Prerequisite
 
@@ -10,8 +10,14 @@ xcode-select install
 
 ## Setup
 
-Run the `install.sh` script in terminal.
+Run the `install.sh` script in terminal to install tools and apps.
 
 ```bash
 ./install.sh
+```
+
+Run the `dotfiles.sh` script to symlink dotfiles.
+
+```bash
+./dotfiles.sh
 ```
