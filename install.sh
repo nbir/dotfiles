@@ -3,8 +3,8 @@
 
 # Homebrew taps
 BREW_TAPS=(
-    caskroom/cask
-    caskroom/versions
+    homebrew/cask
+    homebrew/cask-versions
     cockroachdb/tap
     hashicorp/tap
 )
@@ -77,5 +77,8 @@ do
 done
 
 # Homebrew cleanup
-brew cleanup --force
+brew cleanup
 rm -f -r /Library/Caches/Homebrew/*
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
