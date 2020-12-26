@@ -1,5 +1,8 @@
 # Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! command -v brew &> /dev/null
+then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # Homebrew taps
 BREW_TAPS=(
@@ -48,7 +51,10 @@ BREW_FROMULAS=(
 
 for formula in ${BREW_FROMULAS[@]}
 do
-    brew install $formula
+    if ! brew ls --versions $formula &> /dev/null
+    then
+        brew install $formula
+    fi
 done
 
 # Homebrew cask formulas
@@ -58,7 +64,6 @@ BREW_CASK_FROMULAS=(
     docker
     dropbox
     google-chrome
-    google-drive
     iterm2
     karabiner-elements
     messenger
@@ -73,7 +78,10 @@ BREW_CASK_FROMULAS=(
 
 for formula in ${BREW_CASK_FROMULAS[@]}
 do
-    brew install --cask $formula
+    if ! brew ls --versions --cask $formula &> /dev/null
+    then
+        brew install --cask $formula
+    fi
 done
 
 # Homebrew cleanup
