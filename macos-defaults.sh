@@ -22,8 +22,7 @@ killall Dock
 defaults write com.apple.finder QuitMenuItem -bool true
 
 # Use list view in all Finder windows by default
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Show all file extensions inside the Finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true && killall Finder
@@ -41,3 +40,9 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.5
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Reduce key repeat delay to 15ms
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+# Reduce delay until key repeat to 150ms
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
