@@ -1,0 +1,54 @@
+# source
+alias src='source ~/.zshrc'
+alias tsrc='tmux source-file ~/.tmux.conf'
+
+# helper functions
+killProcess() { ps aux | grep $1 | awk '{print $2}' | xargs kill -9; }
+
+# shell
+alias c='clear'
+alias g="ag"
+alias hg='history | grep'
+alias k9='sudo kill -9'
+alias l='ls'
+alias ll='ls -l'
+alias lsa='ls -a'
+alias lsg='ls -a | grep'
+alias lsl='ls -lh'
+alias psg='ps -ef | grep'
+alias psk=killProcess
+alias psp='lsof -i'
+alias rmd='rm -rf'
+alias x='exit'
+
+# git
+alias b='git branch'
+alias f='clear; git diff'
+alias fg='clear; git diff | grep'
+alias log='git log --graph --all --oneline --decorate'
+alias s='clear; git status'
+
+# tmux
+alias tas='tmux attach-session -t'
+alias tks='tmux kill-session -t'
+alias tls='tmux list-sessions'
+alias trn='tmux rename-session -t'
+
+# csv
+alias csv=csvlook
+
+# q
+alias qq="q -d ',' -H"
+
+# kubernetes
+alias k='kubectl'
+alias kc='k config'
+alias kcc='echo "$(kubectl config current-context)"'
+alias kd='k describe'
+alias kg='k get'
+alias ku='kubectl config unset current-context'
+
+alias kn='kubens'
+alias kng='kubens | g'
+alias kx='kubectx'
+alias kxg='kubectx | g'

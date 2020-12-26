@@ -21,3 +21,9 @@ Run the `dotfiles.sh` script to symlink dotfiles.
 ```bash
 ./dotfiles.sh
 ```
+
+Run the `setup.sh` script to add aliases and source other files.
+
+```bash
+./setup.sh
+```
