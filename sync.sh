@@ -25,3 +25,5 @@ LOCAL_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 mv "$LOCAL_DIR/User" "$LOCAL_DIR/User.backup"
 ln -s "$CLOUD_DIR/User" "$LOCAL_DIR/User"
+
+ln -s /usr/local/bin/subl /usr/local/bin/sl
