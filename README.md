@@ -36,10 +36,14 @@ Run the `macos-defaults.sh` script to configure macOS settings.
 ./macos-defaults.sh
 ```
 
+Run the `sync.sh` script to sync secrets and app settings.
+
+```bash
+./sync.sh
+```
+
 ## Post Setup
 
 To sync iTerm2 preferences, go to Preferences > General > Preferences. Check the following:
 * Load preferences from a custom folder or URL
 * Save changes to folder when iTerm2 quits
-
-Sync Sublime Text packages and settings using [this guide](https://blog.codecarrot.net/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-cloud-storage/).
