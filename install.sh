@@ -60,9 +60,11 @@ done
 # Homebrew cask formulas
 BREW_CASK_FROMULAS=(
     adobe-acrobat-reader
+    balenaetcher
     caffeine
     docker
     dropbox
+    firefox
     google-chrome
     iterm2
     karabiner-elements
