@@ -16,14 +16,3 @@ do
     echo "ln -s $CLOUD_DIR/$key $LOCAL_DIR/$key"
     ln -s "$CLOUD_DIR/$key" $LOCAL_DIR/$key
 done
-
-# Sublime Text
-# https://blog.codecarrot.net/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-cloud-storage/
-
-CLOUD_DIR=$CLOUD_SYNC_DIR/sublime-text
-LOCAL_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages"
-
-mv "$LOCAL_DIR/User" "$LOCAL_DIR/User.backup"
-ln -s "$CLOUD_DIR/User" "$LOCAL_DIR/User"
-
-ln -s /usr/local/bin/subl /usr/local/bin/sl
