@@ -22,6 +22,7 @@ BREW_FROMULAS=(
     cockroach
     cowsay
     csvkit
+    derailed/k9s/k9s
     git
     go
     gradle
