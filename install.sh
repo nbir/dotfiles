@@ -20,6 +20,7 @@ done
 # Homebrew formulas
 BREW_FROMULAS=(
     cockroach
+    colima
     cowsay
     csvkit
     derailed/k9s/k9s
@@ -63,7 +64,6 @@ BREW_CASK_FROMULAS=(
     adobe-acrobat-reader
     balenaetcher
     caffeine
-    docker
     dropbox
     firefox
     google-chrome
