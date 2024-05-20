@@ -46,3 +46,8 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Reduce delay until key repeat to 150ms
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Disable the charging sound
+defaults write com.apple.PowerChime ChimeOnNoHardware -bool true
+
+killall PowerChime
