@@ -6,6 +6,10 @@ SSH_KEYS=(
     config
     id_rsa_nibir_personal
     id_rsa_nibir_personal.pub
+    id_rsa_nibir_homelab_bastion
+    id_rsa_nibir_homelab_bastion.pub
+    id_rsa_nibir_homelab_rpi_k8s_cluster
+    id_rsa_nibir_homelab_rpi_k8s_cluster.pub
 )
 
 CLOUD_DIR=$CLOUD_SYNC_DIR/ssh
